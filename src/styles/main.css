@@ -1,0 +1,258 @@
+@import url(./responsive.css);
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #bf1722;
+    color: white;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+
+header {
+    color: whitesmoke;
+    background-image: url("../public/images/heros/hero-image_4.jpg");
+    height: 400px;
+    background-size: cover;
+    background-blend-mode: saturation;
+}
+
+header h2 {
+    margin: 100px auto;
+    font-size: 3rem;
+    text-align: center;
+    width: fit-content;
+    color: mix(#fff, #e91e63, 85%);
+    font-weight: 900;
+
+}
+
+
+
+nav {
+    padding: 0 16px;
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+}
+
+nav button {
+    padding: 0 !important;
+    color: white;
+    height: 44px;
+    min-width: 44px !important;
+    min-height: 44px !important;
+    border: none;
+    background-color: transparent !important;
+}
+
+nav #menu_drawer {
+    display: none;
+    min-width: 44px !important;
+    min-height: 44px !important;
+}
+
+nav h1 a {
+    min-height: 44px;
+    min-width: 44px;
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+nav h1 {
+    display: block;
+    min-width: 44px !important;
+    min-height: 44px !important;
+}
+
+
+nav ul {
+    text-align: end;
+    margin: auto 0;
+    padding: 0;
+    list-style-type: none;
+    height: fit-content;
+}
+
+nav ul li {
+    margin: 0 20px;
+    display: inline-block;
+    min-width: 44px !important;
+    min-height: 44px !important;
+}
+
+nav ul li a {
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    font-size: 1.5rem;
+    margin-left: 30px;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: blue;
+}
+
+
+
+header img {
+    z-index: -1;
+    width: 100%;
+    height: 600px;
+}
+
+img {
+    display: block;
+}
+
+main {
+    overflow: hidden;
+    width: 100%;
+    height: fit-content;
+}
+
+#content {
+    width: 100%;
+    overflow: hidden;
+}
+
+#content h2 {
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    text-align: center;
+}
+
+food-list {
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px 10px;
+}
+
+
+food-item {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+food-item .post_item_thumbnail {
+    height: 10%;
+}
+
+food-item .post_item_kota {
+    border-radius: 0 20px 20px 0;
+    padding: 10px;
+    width: fit-content;
+    background-color: aquamarine;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+food-item .post_deskripsi {
+    margin: 0;
+    padding: 20px 32px;
+}
+
+
+food-item .post_deskripsi h2 a {
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    text-decoration: none;
+    color: black;
+}
+
+food-item .post_item_rating {
+    font-size: 1em;
+    width: fit-content;
+}
+
+food-item p {
+    font-size: 1.2em;
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.5;
+}
+
+
+/* Detail */
+.detail {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 50%;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 auto 5%;
+}
+
+
+
+.detail .post_item_thumbnail {
+    height: 50%;
+}
+
+.detail .post_item_kota {
+    border-radius: 0 20px 20px 0;
+    padding: 10px;
+    width: fit-content;
+    background-color: aquamarine;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.detail .post_deskripsi {
+    margin: 0;
+    padding: 20px 32px;
+}
+
+
+.detail .post_deskripsi h2 a {
+    display: block;
+    min-width: 44px;
+    min-height: 44px;
+    text-decoration: none;
+    color: black;
+}
+
+.detail .post_item_rating {
+    font-size: 1em;
+    width: fit-content;
+}
+
+.detail p {
+    font-size: 1.2em;
+    text-align: justify;
+    word-spacing: 1px;
+    line-height: 1.5;
+}
+
+footer {
+    padding: 5px 0;
+    width: 100%;
+    background-color: powderblue;
+    color: black;
+    text-align: center;
+}

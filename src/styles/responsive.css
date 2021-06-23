@@ -1,0 +1,161 @@
+@media screen and (max-width: 900px) {
+
+    food-list {
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+
+    }
+
+    food-item .post_deskripsi {
+        padding: 10px 15px !important;
+    }
+
+    food-item p {
+        font-size: 1em;
+        text-align: justify;
+        word-spacing: 0.5px;
+        line-height: 1.5;
+    }
+
+    /* Detail */
+    /* Detail */
+    .detail {
+        position: relative;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 80% !important;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+
+
+    .detail .post_item_thumbnail {
+        height: 50%;
+    }
+
+    .detail .post_item_kota {
+        border-radius: 0 20px 20px 0;
+        padding: 10px;
+        width: fit-content;
+        background-color: aquamarine;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .detail .post_deskripsi {
+        margin: 0;
+        padding: 20px 32px;
+    }
+
+
+    .detail .post_deskripsi h2 a {
+        display: block;
+        min-width: 44px;
+        min-height: 44px;
+        text-decoration: none;
+        color: black;
+    }
+
+    .detail .post_item_rating {
+        font-size: 1em;
+        width: fit-content;
+    }
+
+    .detail p {
+        font-size: 1.2em;
+        text-align: justify;
+        word-spacing: 1px;
+        line-height: 1.5;
+    }
+
+}
+
+
+@media screen and (max-width: 700px) {
+
+    header h2 {
+        font-size: 2.5em !important;
+    }
+
+}
+
+@media screen and (max-width: 650px) {
+
+    food-list {
+        padding: 0 20px;
+        display: grid;
+        grid-template-columns: 1fr !important;
+
+    }
+
+
+}
+
+
+@media screen and (max-width: 605px) {
+
+    header h2 {
+        font-size: 2em !important;
+        margin: 0 5px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    nav h1 {
+        margin-left: 80px;
+        text-align: center;
+        width: 44px !important;
+        height: 44px !important;
+        width: fit-content !important;
+        position: absolute;
+        left: 18%;
+    }
+
+    nav #menu_drawer {
+        width: fit-content;
+        display: block !important;
+        font-size: 2.5em;
+    }
+
+
+    nav ul li {
+        background-color: transparent;
+        text-align: center;
+        margin: 200px 0;
+        display: list-item !important;
+    }
+
+    nav ul {
+        display: list-item;
+        z-index: 10;
+        background-color: #24292E;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 50px;
+        /* This trasform moves the drawer off canvas. */
+        -webkit-transform: translate(-110%, 0);
+        transform: translate(-110%, 0);
+
+        /* Optionally, we animate the drawer. */
+        transition: transform 0.0s ease;
+    }
+
+    nav ul li {
+        display: list-item;
+    }
+
+
+    .open {
+        display: block;
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+
+
+}
