@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const {InjectManifest} = require('workbox-webpack-plugin');
+const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 
 module.exports = {
@@ -41,8 +42,70 @@ module.exports = {
         },
       ],
     }),
+    new WebpackPwaManifest({
+      name: 'Restaurant Catalog',
+      short_name: 'Restaurant Lite',
+      description: 'Free Catalogue Restaurant for you',
+      start_url: '/index.html',
+      display: 'standalone',
+      background_color: '#ffffff',
+      theme_color: '#d84315',
+      icons: [
+        {
+          src: path.resolve(__dirname, 'src/public/icons/icon-72.png'),
+          sizes: '72x73',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+        {
+          src: path.resolve(__dirname, 'src/public/icons/icon-96.png'),
+          sizes: '96x96',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+        {
+          src: path.resolve(__dirname, 'src/public/icons/icon-128.png'),
+          sizes: '128x128',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+        {
+          src: path.resolve(__dirname, 'src/public/icons/icon-144.png'),
+          sizes: '144x144',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+        {
+          src: path.resolve(__dirname, 'src/public/icons/icon-152.png'),
+          sizes: '152x152',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+        {
+          src: path.resolve(__dirname, 'src/public/icons/icon-192.png'),
+          sizes: '192x192',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+        {
+          src: path.resolve(__dirname, 'src/public/icons/icon-384.png'),
+          sizes: '384x384',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+        {
+          src: path.resolve(__dirname, 'src/public/icons/icon-512.png'),
+          sizes: '512x512',
+          type: 'image/png',
+          purpose: 'any maskable',
+        },
+      ],
+    }),
     new InjectManifest({
       swSrc: path.resolve(__dirname, 'src/scripts/sw.js'),
+      swDest: 'sw.js',
     }),
   ],
 };
+
+

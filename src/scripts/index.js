@@ -4,6 +4,7 @@ import '../styles/responsive.css';
 import App from './views/app';
 import swRegister from './utils/sw-register';
 
+console.log('index.js');
 
 const app = new App({
   button: document.querySelector('#menu_drawer'),
