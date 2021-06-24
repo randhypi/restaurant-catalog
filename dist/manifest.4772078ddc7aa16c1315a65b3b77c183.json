@@ -1,0 +1,60 @@
+{
+  "icons": [
+    {
+      "src": "icon_512x512.5d12a129284e3608f518c91cd7bc35be.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_384x384.53139e1f7ca781a9a155661502891151.png",
+      "sizes": "384x384",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_192x192.41f0aa9ee5f8c9440de155c0c9987691.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_152x152.e713de232b765f0c22c336a52ebe34ca.png",
+      "sizes": "152x152",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_144x144.8457e78a68c3145c090f1acaa3fd9459.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_128x128.6e3cc6eef55d97def54f9f981cfd4dd5.png",
+      "sizes": "128x128",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_96x96.5d2a867c96196a60f104fac88614b021.png",
+      "sizes": "96x96",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon_72x72.2e96386854811db4e7b04a67976c0b4b.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "name": "Restaurant Catalog",
+  "short_name": "Restaurant Lite",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": "/index.html",
+  "description": "Free Catalogue Restaurant for you",
+  "background_color": "#ffffff",
+  "theme_color": "#d84315"
+}
