@@ -1,15 +1,12 @@
-import '../sw';
+import {Workbox} from 'workbox-window';
 
 const swRegister = async () => {
   if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-        .then((registration) => {
-          console.log('SW registered: ', registration);
-        }).catch((registrationError) => {
-          console.log('SW registration failed: ', registrationError);
-        });
+    const wb = new Workbox('/sw.js');
+    await wb.register();
     return;
   }
+  console.log('service worker not supported');
 };
 
 export default swRegister;

@@ -35,12 +35,14 @@
     }
 
     .detail .post_item_kota {
-        border-radius: 0 20px 20px 0;
+        border-radius: 0 60px 60px 0;
         padding: 10px;
         width: fit-content;
+        padding-right: 40px;
         background-color: aquamarine;
         position: absolute;
-        top: 0;
+        line-height: 0.5;
+        top: 10px;
         left: 0;
     }
 
@@ -73,14 +75,6 @@
 }
 
 
-@media screen and (max-width: 700px) {
-
-    header h2 {
-        font-size: 2.5em !important;
-    }
-
-}
-
 @media screen and (max-width: 650px) {
 
     food-list {
@@ -91,14 +85,33 @@
     }
 
 
+
+    .detail .post_item_kota h3 {
+        font-weight: bold !important;
+        font-size: 1em !important;
+    }
+
+    .detail .post_item_kota h4 {
+        font-weight: normal !important;
+        font-size: 1em !important;
+    }
+
 }
 
 
 @media screen and (max-width: 605px) {
 
+    header {
+        color: whitesmoke;
+        background-image: url("../public/images/heros/hero-image_4-small.jpg") !important;
+        height: 300px !important;
+        background-size: cover;
+        background-blend-mode: saturation;
+    }
+
     header h2 {
         font-size: 2em !important;
-        margin: 0 5px;
+        margin: 100px auto !important;
     }
 
     nav {
@@ -112,7 +125,7 @@
         height: 44px !important;
         width: fit-content !important;
         position: absolute;
-        left: 18%;
+        left: 28%;
     }
 
     nav #menu_drawer {
@@ -156,6 +169,28 @@
         transform: translate(0, 0);
     }
 
+    .detail .menus-detail {
+        display: block !important;
+    }
 
+    .detail .post_item_kota h3 {
+        font-weight: bold !important;
+        font-size: 0.7 !important;
+    }
 
+    .detail .post_item_kota h4 {
+        font-weight: normal !important;
+        font-size: 0.7 !important;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    nav h1 {
+        text-align: center;
+        width: 44px !important;
+        height: 44px !important;
+        width: fit-content !important;
+        position: absolute;
+        left: 20% !important;
+    }
 }

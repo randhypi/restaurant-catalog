@@ -27,13 +27,14 @@ body {
 header {
     color: whitesmoke;
     background-image: url("../public/images/heros/hero-image_4.jpg");
-    height: 400px;
+    height: 600px;
     background-size: cover;
     background-blend-mode: saturation;
 }
 
+
 header h2 {
-    margin: 100px auto;
+    margin: 210px auto;
     font-size: 3rem;
     text-align: center;
     width: fit-content;
@@ -112,12 +113,6 @@ nav ul li a:hover {
 
 
 
-header img {
-    z-index: -1;
-    width: 100%;
-    height: 600px;
-}
-
 img {
     display: block;
 }
@@ -141,7 +136,7 @@ main {
 }
 
 food-list {
-    padding: 0 20px;
+    padding: 24px 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 10px 10px;
@@ -156,9 +151,7 @@ food-item {
     overflow: hidden;
 }
 
-food-item .post_item_thumbnail {
-    height: 10%;
-}
+
 
 food-item .post_item_kota {
     border-radius: 0 20px 20px 0;
@@ -196,36 +189,72 @@ food-item p {
     line-height: 1.5;
 }
 
+food-item img {
+    height: 500px;
+    max-height: 500px;
+    width: 100%;
+}
+
+food-item .post_deskripsi p a {
+    display: inline-block;
+    min-width: 44px;
+    min-height: 44px;
+    text-decoration: none;
+    color: blue !important;
+}
+
+
 
 /* Detail */
 .detail {
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    width: 50%;
-    border-radius: 5px;
+    width: 82%;
     overflow: hidden;
+    border-radius: 5px;
     margin: 0 auto 5%;
+    padding-bottom: 10px;
 }
 
 
 
 .detail .post_item_thumbnail {
     height: 50%;
+    max-height: 50%;
+}
+
+.detail img {
+    max-height: 500px;
+    width: 100%;
 }
 
 .detail .post_item_kota {
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 60px 60px 0;
     padding: 10px;
     width: fit-content;
+    padding-right: 40px;
     background-color: aquamarine;
     position: absolute;
-    top: 0;
+    line-height: 0.7;
+    top: 10px;
     left: 0;
+}
+
+.detail .post_item_kota h3 {
+    font-weight: bold !important;
+    font-size: 1.3em;
+    margin: 0;
+}
+
+.detail .post_item_kota h4 {
+    font-weight: normal !important;
+    font-size: 1.1em;
+    margin: 0;
 }
 
 .detail .post_deskripsi {
     margin: 0;
-    padding: 20px 32px;
+    padding: 5px 32px;
 }
 
 
@@ -238,7 +267,8 @@ food-item p {
 }
 
 .detail .post_item_rating {
-    font-size: 1em;
+    font-size: 1.2rem !important;
+    display: inline-block !important;
     width: fit-content;
 }
 
@@ -247,6 +277,115 @@ food-item p {
     text-align: justify;
     word-spacing: 1px;
     line-height: 1.5;
+}
+
+.detail .categories,
+.menus-detail {
+    padding: 5px 32px;
+}
+
+.detail .menus-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0 5px;
+}
+
+.detail .food-menu h4,
+.drink-menu h4 {
+    margin-left: 10px;
+}
+
+.detail .food-menu,
+.drink-menu {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 100%;
+    border-radius: 5px;
+}
+
+
+.detail-review {
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 80%;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 0 auto 5%;
+    padding: 10px;
+}
+
+
+.detail-review h4 {
+    font-size: 1.2rem;
+
+}
+
+.detail-review .detail-review-name {
+    font-weight: bold;
+    margin: 2px 7px;
+}
+
+.detail-review .detail-review-review {
+    margin: 1px 7px;
+}
+
+.detail-review .detail-review-date {
+    color: rgb(145, 158, 145);
+    text-align: end;
+    margin: 1px 7px;
+}
+
+.add-review input {
+    height: fit-content;
+}
+
+
+.add-review .input-review {
+    display: inline-block;
+    min-height: 44px;
+    max-height: 44px;
+    width: 97%;
+    border: 2px solid rgb(177, 176, 176);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.add-review .button-review {
+    display: block;
+    width: 20%;
+    min-width: 44px;
+    min-height: 44px;
+    border: 2px solid rgb(177, 176, 176);
+    border-radius: 10px;
+    margin: 10px 0;
+    height: 30px;
+}
+
+.like {
+    font-size: 18px;
+    border-radius: 0 20px 20px 0;
+    padding: 10px;
+    background-color: aquamarine;
+    background-color: #db0000;
+    color: white;
+    border: 0;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.favorite-item__not__found {
+    text-align: center;
+}
+
+.imgNotfound {
+    margin: 50px auto;
+    width: 60%;
+    height: 300px;
 }
 
 footer {
